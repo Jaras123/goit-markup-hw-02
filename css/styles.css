@@ -1,8 +1,14 @@
+:root {
+  --color: #212121;
+  --family: "Roboto", "Raleway", "OleoScript", sans-serif;
+  --weight: 700;
+  --spacing: 0.03em;
+}
 body {
-  color: #212121;
-  font-family: "Roboto", "Raleway", "OleoScript", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  color: var(--color);
+  font-family: var(--family);
+  font-weight: var(--weight);
+  letter-spacing: var(--spacing);
 }
 .logo1 {
   font-family: "Raleway";
@@ -29,7 +35,8 @@ body {
   color: #212121;
   font-size: 14px;
 }
-.link:hover {
+.link:hover,
+.link:focus {
   color: #2196f3;
 }
 .button {
@@ -39,6 +46,7 @@ body {
   background-color: #f5f4fa;
   border: none;
   text-align: center;
+  font-family: inherit;
 }
 .order {
   font-size: 16px;
@@ -51,7 +59,8 @@ body {
   border-radius: 4px;
   margin-bottom: 50px;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   cursor: pointer;
   background-color: #2196f3;
   color: white;
